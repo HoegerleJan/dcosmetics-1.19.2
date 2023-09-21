@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "dcosmetics",
+	"version": "${version}",
+	"name": "DCosmetics",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"doulrion"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/dcosmetics/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.doulrion.dcosmetics.DCosmetics"
+		],
+		"client": [
+          "net.doulrion.dcosmetics.DCosmeticsClient"
+		],
+		"fabric-datagen": [
+          "net.doulrion.dcosmetics.DCosmeticsDataGenerator"
+		]
+	},
+	"mixins": [
+		"dcosmetics.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.19.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
